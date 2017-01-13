@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenNIC Server Test</title>
+    <link href="style.min.css" media="all" rel="stylesheet" />
+    <script type="text/javascript">
+      function load_events()
+      {
+        var buttons = document.getElementsByTagName( 'input' );
+        for( var i = 0; i < buttons.length; i++ )
+        {
+          if( 'undefined' !== typeof buttons[i].dataset.page ) buttons[i].onclick = function() { var form = document.getElementById( 'form' ); form.action = this.dataset.page; form.submit() };
+        }
+        document.getElementById( 'ip_addr' ).focus();
+      }
+    </script>
+  </head>
+  <body onload="load_events();">
+    <div class="header">
+      OpenNIC DNS Server Test
+    </div>
+    <div class="form">
+      The tools on this page will test the operation of new and existing DNS
+      servers under OpenNIC. A series of queries will be sent to the IP address
+      entered to determine proper lookups of OpenNIC and ICANN top-level domains.<br />
+      <br />
+      Please enter in a FQDN/IP Address to run tests with OpenNIC.
+      <form id="form" action="" method="get">
+        <input type="text" id="ip_addr" name="ip_addr" />
+        <input type="button" data-page="t1.php" value="Test T1 Server" />
+        <input type="button" data-page="t2.php" value="Test T2 Server" />
+      </form>
+    </div>
+  </body>
+</html>
