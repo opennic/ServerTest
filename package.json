@@ -1,0 +1,27 @@
+{
+  "name": "test.opennic.org",
+  "version": "0.1.0",
+  "author": "Luggs <im@luggs.co",
+  "description": "Utility to test T1/T2 Opennic servers",
+  "contributors": [
+    {
+      "name": "Luggs",
+      "email": "im@luggs.co"
+    },
+    {
+      "name": "Fusl",
+      "email": "root@hallowe.lt"
+    }
+  ],
+  "bin": {
+    "opennic-test-server": "./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opennic/ServerTest.git"
+  },
+  "keyword": [
+    "opennic"
+  ],
+  "license": "GPLv3"
+}

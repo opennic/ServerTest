@@ -1,17 +1,15 @@
 # OpenNIC T1/T2 DNS Server Test Script
-[Live Server Test](http://report.opennicproject.org/t2log/)
+[Live Server Test](https://test.opennic.org/)
 
 INSERT INFORMATION HERE
 
-
 ### TODO
-- More verbose commenting
-- Validate all test conditions are handled correctly
-- Record test results
+- Convert to NodeJS
+- Pull server information from ldap if exists
+- Query DNS server with list of tests
+- If DNSCrypt specified, do tests against it as well
 
 
 #### Requirements
 ------
-- Net_DNS2
-  * This requires at least version 1.3.3
-- PHP 5.4 or newer
+- To be included
