@@ -1,0 +1,19 @@
+{
+  "server": {
+    "ldap": {
+      "host": "ldap://127.0.0.1:389",
+      "tlsOptions": {},
+      "auth": {
+        "username": "",
+        "password": ""
+      }
+    },
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "password": "",
+      "prefix": "",
+      "expire": 300
+    }
+  }
+}
