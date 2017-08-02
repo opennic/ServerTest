@@ -23,5 +23,13 @@
   "keyword": [
     "opennic"
   ],
-  "license": "GPLv3"
+  "license": "GPLv3",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "ldapjs": "^1.0.1",
+    "range_check": "^1.4.0",
+    "redis": "^2.7.1",
+    "uuid": "^3.1.0"
+  }
 }
